@@ -1,0 +1,77 @@
+[
+  {
+    "__TYPE__": "SharedSliceContent",
+    "variation": "default",
+    "primary": {
+      "title": {
+        "__TYPE__": "FieldContent",
+        "value": "small",
+        "type": "Text"
+      },
+      "description": {
+        "__TYPE__": "StructuredTextContent",
+        "value": [
+          {
+            "type": "paragraph",
+            "content": {
+              "text": "Labore voluptate occaecat reprehenderit. Tempor veniam sint consequat nulla non esse. Esse esse qui velit duis laborum excepteur."
+            }
+          }
+        ]
+      },
+      "sub_text": {
+        "__TYPE__": "FieldContent",
+        "value": "paid",
+        "type": "Text"
+      },
+      "section_image": {
+        "__TYPE__": "ImageContent",
+        "origin": {
+          "id": "main",
+          "url": "https://images.unsplash.com/photo-1589321578146-4c1ba445cc88",
+          "width": 3168,
+          "height": 4752
+        },
+        "url": "https://images.unsplash.com/photo-1589321578146-4c1ba445cc88",
+        "width": 3168,
+        "height": 4752,
+        "edit": {
+          "zoom": 1,
+          "crop": {
+            "x": 0,
+            "y": 0
+          },
+          "background": "transparent"
+        },
+        "thumbnails": {}
+      },
+      "cta_button_text": {
+        "__TYPE__": "FieldContent",
+        "value": "root",
+        "type": "Text"
+      },
+      "cta_button_colour": {
+        "__TYPE__": "FieldContent",
+        "value": "#cc8198",
+        "type": "Color"
+      },
+      "cta_button_link": {
+        "__TYPE__": "LinkContent",
+        "value": {
+          "__TYPE__": "ExternalLink",
+          "url": "https://slicemachine.dev"
+        }
+      },
+      "image_left": {
+        "__TYPE__": "BooleanContent",
+        "value": false
+      }
+    },
+    "items": [
+      {
+        "__TYPE__": "GroupItemContent",
+        "value": []
+      }
+    ]
+  }
+]

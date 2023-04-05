@@ -1,0 +1,176 @@
+{
+  "slices": {
+    "__TYPE__": "SliceContentType",
+    "value": [
+      {
+        "key": "header$a18a758d-fc71-4d7f-bfb6-57460fd87896",
+        "name": "header",
+        "widget": {
+          "__TYPE__": "SharedSliceContent",
+          "variation": "default",
+          "primary": {
+            "title": {
+              "__TYPE__": "FieldContent",
+              "value": "thee",
+              "type": "Text"
+            },
+            "sub_text": {
+              "__TYPE__": "FieldContent",
+              "value": "mountain",
+              "type": "Text"
+            },
+            "description": {
+              "__TYPE__": "StructuredTextContent",
+              "value": [
+                {
+                  "type": "paragraph",
+                  "content": {
+                    "text": "Esse officia cillum sint anim eiusmod pariatur nostrud consequat. Reprehenderit magna nostrud est voluptate aliquip nostrud consectetur ut aute incididunt non Lorem. Ipsum consequat occaecat dolor voluptate veniam occaecat anim adipisicing."
+                  }
+                }
+              ]
+            },
+            "section_image": {
+              "__TYPE__": "ImageContent",
+              "origin": {
+                "id": "main",
+                "url": "https://images.unsplash.com/photo-1587653915936-5623ea0b949a",
+                "width": 4000,
+                "height": 4000
+              },
+              "url": "https://images.unsplash.com/photo-1587653915936-5623ea0b949a",
+              "width": 4000,
+              "height": 4000,
+              "edit": {
+                "zoom": 1,
+                "crop": {
+                  "x": 0,
+                  "y": 0
+                },
+                "background": "transparent"
+              },
+              "thumbnails": {}
+            },
+            "cta_button_text": {
+              "__TYPE__": "FieldContent",
+              "value": "blind",
+              "type": "Text"
+            },
+            "cta_button_colour": {
+              "__TYPE__": "FieldContent",
+              "value": "#9b21e2",
+              "type": "Color"
+            },
+            "cta_button_link": {
+              "__TYPE__": "LinkContent",
+              "value": {
+                "__TYPE__": "ExternalLink",
+                "url": "http://twitter.com"
+              }
+            },
+            "image_left": {
+              "__TYPE__": "BooleanContent",
+              "value": false
+            }
+          },
+          "items": [
+            {
+              "__TYPE__": "GroupItemContent",
+              "value": []
+            }
+          ]
+        }
+      },
+      {
+        "key": "quote$93a73c40-f787-441d-b9b3-14191015964f",
+        "name": "quote",
+        "widget": {
+          "__TYPE__": "SharedSliceContent",
+          "variation": "default",
+          "primary": {
+            "quote": {
+              "__TYPE__": "FieldContent",
+              "value": "stone",
+              "type": "Text"
+            },
+            "description": {
+              "__TYPE__": "StructuredTextContent",
+              "value": [
+                {
+                  "type": "paragraph",
+                  "content": {
+                    "text": "Et sint sint ipsum ipsum. Esse veniam incididunt aliqua pariatur occaecat labore consequat. Dolore ex quis ut cillum voluptate in ea enim pariatur consequat magna ipsum pariatur in."
+                  }
+                }
+              ]
+            }
+          },
+          "items": [
+            {
+              "__TYPE__": "GroupItemContent",
+              "value": []
+            }
+          ]
+        }
+      },
+      {
+        "key": "section$c003b756-b882-41c8-8b22-fdebb83fc880",
+        "name": "section",
+        "widget": {
+          "__TYPE__": "SharedSliceContent",
+          "variation": "default",
+          "primary": {
+            "title": {
+              "__TYPE__": "FieldContent",
+              "value": "sport",
+              "type": "Text"
+            },
+            "sub_title": {
+              "__TYPE__": "FieldContent",
+              "value": "medicine",
+              "type": "Text"
+            },
+            "description": {
+              "__TYPE__": "StructuredTextContent",
+              "value": [
+                {
+                  "type": "paragraph",
+                  "content": {
+                    "text": "Dolor ut proident eiusmod sint duis aliquip irure proident."
+                  }
+                }
+              ]
+            },
+            "cta_button_colour": {
+              "__TYPE__": "FieldContent",
+              "value": "#9ba700",
+              "type": "Color"
+            },
+            "cta_button_text": {
+              "__TYPE__": "FieldContent",
+              "value": "oxygen",
+              "type": "Text"
+            },
+            "cta_button_link": {
+              "__TYPE__": "LinkContent",
+              "value": {
+                "__TYPE__": "ExternalLink",
+                "url": "https://prismic.io"
+              }
+            },
+            "image_left": {
+              "__TYPE__": "BooleanContent",
+              "value": true
+            }
+          },
+          "items": [
+            {
+              "__TYPE__": "GroupItemContent",
+              "value": []
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

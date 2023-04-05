@@ -1,0 +1,23 @@
+{
+  "_cts": {
+    "page": {},
+    "home_page": {}
+  },
+  "slices": {
+    "Header": {
+      "default": {
+        "primary": {}
+      }
+    },
+    "Section": {
+      "default": {
+        "primary": {}
+      }
+    },
+    "Quote": {
+      "default": {
+        "primary": {}
+      }
+    }
+  }
+}

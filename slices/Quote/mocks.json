@@ -1,0 +1,30 @@
+[
+  {
+    "__TYPE__": "SharedSliceContent",
+    "variation": "default",
+    "primary": {
+      "description": {
+        "__TYPE__": "StructuredTextContent",
+        "value": [
+          {
+            "type": "paragraph",
+            "content": {
+              "text": "Excepteur magna aliqua minim culpa culpa minim veniam. Exercitation ipsum minim fugiat labore Lorem ea."
+            }
+          }
+        ]
+      },
+      "quote": {
+        "__TYPE__": "FieldContent",
+        "value": "specific",
+        "type": "Text"
+      }
+    },
+    "items": [
+      {
+        "__TYPE__": "GroupItemContent",
+        "value": []
+      }
+    ]
+  }
+]

@@ -1,0 +1,27 @@
+{
+  "id": "page",
+  "label": "Page",
+  "repeatable": true,
+  "status": true,
+  "json": {
+    "Main": {
+      "slices": {
+        "type": "Slices",
+        "fieldset": "Slice Zone",
+        "config": {
+          "choices": {
+            "header": {
+              "type": "SharedSlice"
+            },
+            "quote": {
+              "type": "SharedSlice"
+            },
+            "section": {
+              "type": "SharedSlice"
+            }
+          }
+        }
+      }
+    }
+  }
+}

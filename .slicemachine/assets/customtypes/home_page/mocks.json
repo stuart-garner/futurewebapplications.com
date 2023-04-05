@@ -1,0 +1,176 @@
+{
+  "slices": {
+    "__TYPE__": "SliceContentType",
+    "value": [
+      {
+        "key": "header$2841009c-362a-4d30-a83b-6197b6f8b61e",
+        "name": "header",
+        "widget": {
+          "__TYPE__": "SharedSliceContent",
+          "variation": "default",
+          "primary": {
+            "title": {
+              "__TYPE__": "FieldContent",
+              "value": "population",
+              "type": "Text"
+            },
+            "sub_text": {
+              "__TYPE__": "FieldContent",
+              "value": "shallow",
+              "type": "Text"
+            },
+            "description": {
+              "__TYPE__": "StructuredTextContent",
+              "value": [
+                {
+                  "type": "paragraph",
+                  "content": {
+                    "text": "Incididunt labore duis commodo adipisicing labore dolor consequat pariatur velit ut excepteur eu laboris."
+                  }
+                }
+              ]
+            },
+            "section_image": {
+              "__TYPE__": "ImageContent",
+              "origin": {
+                "id": "main",
+                "url": "https://images.unsplash.com/photo-1593642633279-1796119d5482",
+                "width": 4016,
+                "height": 6016
+              },
+              "url": "https://images.unsplash.com/photo-1593642633279-1796119d5482",
+              "width": 4016,
+              "height": 6016,
+              "edit": {
+                "zoom": 1,
+                "crop": {
+                  "x": 0,
+                  "y": 0
+                },
+                "background": "transparent"
+              },
+              "thumbnails": {}
+            },
+            "cta_button_text": {
+              "__TYPE__": "FieldContent",
+              "value": "shoot",
+              "type": "Text"
+            },
+            "cta_button_colour": {
+              "__TYPE__": "FieldContent",
+              "value": "#9e549d",
+              "type": "Color"
+            },
+            "cta_button_link": {
+              "__TYPE__": "LinkContent",
+              "value": {
+                "__TYPE__": "ExternalLink",
+                "url": "http://google.com"
+              }
+            },
+            "image_left": {
+              "__TYPE__": "BooleanContent",
+              "value": false
+            }
+          },
+          "items": [
+            {
+              "__TYPE__": "GroupItemContent",
+              "value": []
+            }
+          ]
+        }
+      },
+      {
+        "key": "quote$11fa163a-9e65-4109-a462-fc72068c76dc",
+        "name": "quote",
+        "widget": {
+          "__TYPE__": "SharedSliceContent",
+          "variation": "default",
+          "primary": {
+            "quote": {
+              "__TYPE__": "FieldContent",
+              "value": "tonight",
+              "type": "Text"
+            },
+            "description": {
+              "__TYPE__": "StructuredTextContent",
+              "value": [
+                {
+                  "type": "paragraph",
+                  "content": {
+                    "text": "Ut id voluptate ipsum sint ex labore enim sit veniam et nostrud qui quis ea ea. Consequat quis sint ad pariatur elit Lorem velit do est veniam reprehenderit in. Cupidatat consectetur pariatur ad."
+                  }
+                }
+              ]
+            }
+          },
+          "items": [
+            {
+              "__TYPE__": "GroupItemContent",
+              "value": []
+            }
+          ]
+        }
+      },
+      {
+        "key": "section$d26678f1-9a37-475f-b6d1-e6d9d625548c",
+        "name": "section",
+        "widget": {
+          "__TYPE__": "SharedSliceContent",
+          "variation": "default",
+          "primary": {
+            "title": {
+              "__TYPE__": "FieldContent",
+              "value": "journey",
+              "type": "Text"
+            },
+            "sub_title": {
+              "__TYPE__": "FieldContent",
+              "value": "floating",
+              "type": "Text"
+            },
+            "description": {
+              "__TYPE__": "StructuredTextContent",
+              "value": [
+                {
+                  "type": "paragraph",
+                  "content": {
+                    "text": "Cillum veniam sit irure laboris qui reprehenderit ea laborum commodo nisi ad voluptate. Magna voluptate cillum velit id pariatur deserunt ut Lorem culpa cupidatat nisi magna ea. Laboris cupidatat nulla in ut magna ea laborum reprehenderit adipisicing dolore cupidatat ullamco adipisicing magna."
+                  }
+                }
+              ]
+            },
+            "cta_button_colour": {
+              "__TYPE__": "FieldContent",
+              "value": "#694f1a",
+              "type": "Color"
+            },
+            "cta_button_text": {
+              "__TYPE__": "FieldContent",
+              "value": "question",
+              "type": "Text"
+            },
+            "cta_button_link": {
+              "__TYPE__": "LinkContent",
+              "value": {
+                "__TYPE__": "ExternalLink",
+                "url": "http://twitter.com"
+              }
+            },
+            "image_left": {
+              "__TYPE__": "BooleanContent",
+              "value": true
+            }
+          },
+          "items": [
+            {
+              "__TYPE__": "GroupItemContent",
+              "value": []
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

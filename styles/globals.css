@@ -1,0 +1,185 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap");
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+@layer components {
+  html {
+    @apply scroll-smooth;
+  }
+
+  body {
+    @apply bg-white text-gray-500;
+  }
+
+  header {
+    @apply w-full;
+  }
+
+  section {
+    @apply relative overflow-hidden;
+  }
+
+  h1 {
+    @apply text-5xl font-bold uppercase text-gray-800;
+  }
+
+  h2 {
+    @apply text-lg font-bold uppercase text-[#24B085];
+  }
+
+  h3 {
+    @apply text-4xl font-bold capitalize text-gray-800;
+  }
+
+  h4 {
+    @apply text-2xl;
+  }
+
+  p {
+    @apply text-lg;
+  }
+
+  img {
+    @apply h-auto w-full;
+  }
+
+  label {
+    @apply text-left;
+  }
+
+  hr {
+    @apply border-gray-500;
+  }
+
+  blockquote {
+    @apply w-full text-5xl font-bold text-gray-800;
+  }
+
+  .social-icons {
+    @apply h-[40px] w-auto;
+  }
+
+  .container {
+    @apply mx-auto px-10;
+  }
+
+  .button {
+    @apply relative z-[1] mt-5 inline-block w-fit overflow-hidden rounded-3xl px-10 py-3 text-gray-900 transition-all duration-300;
+    text-decoration: none;
+  }
+
+  .button:hover {
+    @apply text-green-50;
+  }
+
+  .button::after {
+    @apply absolute left-0 top-0 z-[-1] h-full w-full origin-top-right scale-x-0 scale-y-100 rounded-xl bg-green-600 transition-all duration-300 content-[''];
+    transition: transform 500ms cubic-bezier(0.86, 0, 0.07, 1);
+    transition-timing-function: cubic-bezier(0.86, 0, 0.07, 1);
+  }
+
+  .button:hover::after {
+    @apply origin-top-left scale-x-100 scale-y-100;
+  }
+}
+
+html {
+  font-family: "Montserrat", sans-serif;
+}
+
+footer {
+  background: linear-gradient(
+    0deg,
+    rgb(40, 45, 49) 0%,
+    rgba(40, 45, 49, 1) 60%,
+    rgba(255, 255, 255, 1) 60.1%,
+    rgba(255, 255, 255, 1) 100%
+  );
+}
+
+.nav-bar {
+  position: fixed;
+  z-index: 100;
+  color: #fff;
+  background: transparent;
+  transition: background 0.5s;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px 0 20px;
+}
+.nav-bar span {
+  font-family: "Orbitron", sans-serif;
+  font-size: 30px;
+  color: #151515;
+}
+.show span {
+  color: #151515;
+}
+
+.show {
+  background: #fff;
+  color: #151515;
+}
+
+.menu-toggle {
+  display: block;
+  position: relative;
+  top: 3px;
+  right: 0;
+  z-index: 1;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+.menu-toggle input {
+  display: block;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  top: -7px;
+  left: -5px;
+  cursor: pointer;
+  opacity: 0;
+  z-index: 2;
+  -webkit-touch-callout: none;
+}
+
+.menu-toggle span {
+  display: block;
+  width: 33px;
+  height: 3px;
+  margin-bottom: 7px;
+  position: relative;
+  background: #232323;
+  border-radius: 3px;
+  z-index: 1;
+  transform-origin: 4px 0px;
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1),
+    background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
+}
+
+.menu-toggle input:checked ~ span:nth-last-child(1) {
+  transform: rotate(-45deg) translate(0, -2px);
+}
+
+.menu-toggle input:checked ~ span:nth-last-child(2) {
+  opacity: 0;
+}
+
+.menu-toggle input:checked ~ span:nth-last-child(3) {
+  transform: rotate(45deg) translate(0, 0px);
+}
+
+.mobile-menu {
+  transition: right 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+}
+
+.show-menu {
+  right: 0;
+}
+
+.material-symbols-outlined {
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 48;
+}
