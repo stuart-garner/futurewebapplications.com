@@ -12,7 +12,7 @@ import { motion } from "framer-motion";
  */
 
 const Header = ({ slice }) => (
-  <section className="mt-[100px] py-28">
+  <section className="mt-[160px] py-20">
     <div className=" container relative flex flex-col gap-10 lg:flex-row lg:items-center lg:justify-between">
       <motion.span
         className="absolute -left-5 -top-0 z-[-1] block w-[700px]"
