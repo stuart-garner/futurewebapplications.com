@@ -12,7 +12,7 @@ import RightBlob from "../../components/blobs/RightBlob";
  * @param { SectionProps }
  */
 const Section = ({ slice }) => (
-  <section className="py-28 lg:px-28 lg:py-48">
+  <section className="py-28 lg:px-28 lg:py-28">
     <motion.span
       className={`absolute top-0 ${
         slice.primary.image_left ? "right-0" : "left-0"
