@@ -39,17 +39,21 @@ const Header = () => {
 
   return (
     <header
-      className={`fixed py-5 z-[9999] left-0 right-0  transition-all duration-500 flex items-stretch ${
+      className={`fixed left-0 right-0 z-[9999] flex  items-stretch py-5 transition-all duration-500 ${
         hide ? "-top-[150px]" : "top-0"
-      }  ${shrunk ? "h-[75px] bg-white" : "h-[150px] bg-transparent"}`}
+      }  ${
+        shrunk
+          ? "h-[75px] bg-white drop-shadow-md"
+          : "h-[150px] bg-transparent drop-shadow-none"
+      }`}
     >
-      <div className="container flex justify-between h-auto">
+      <div className="container flex h-auto justify-between">
         <div className="h-auto  w-[300px]">
           <Link href="/" scroll={false} aria-label="Link to home page">
-            <img src="/logo.png" alt="Logo" className="w-auto h-[100%]" />
+            <img src="/logo.png" alt="Logo" className="h-[100%] w-auto" />
           </Link>
         </div>
-        <nav role="navigation" className="flex gap-5 items-center">
+        <nav role="navigation" className="flex items-center gap-12">
           <Link
             className="button-secondary"
             href="/"
@@ -60,10 +64,18 @@ const Header = () => {
 
           <Link
             className="button-secondary"
-            href="/blog"
-            aria-label="Link to blog"
+            href="/about"
+            aria-label="Link to About page"
           >
-            Blog
+            About
+          </Link>
+
+          <Link
+            className="button-secondary"
+            href="/#footer"
+            aria-label="Link to contact form"
+          >
+            Contact
           </Link>
         </nav>
       </div>
