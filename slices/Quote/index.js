@@ -8,7 +8,7 @@ import { motion } from "framer-motion";
  * @param { QuoteProps }
  */
 const Quote = ({ slice }) => (
-  <section className="py-28 lg:py-60">
+  <section className="py-28 lg:py-48">
     <div className="container flex flex-col justify-center lg:flex-row">
       <div className="flex flex-col gap-5 lg:max-w-[60%]">
         <motion.blockquote
