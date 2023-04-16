@@ -11,6 +11,9 @@ import RightBlob from "../../components/blobs/RightBlob";
  * @typedef {import("@prismicio/react").SliceComponentProps<SectionSlice>} SectionProps
  * @param { SectionProps }
  */
+
+const ANIMATION_DURATION = 0.25;
+
 const Section = ({ slice }) => (
   <section className="py-28 lg:px-28 lg:py-28">
     <motion.span
@@ -21,7 +24,7 @@ const Section = ({ slice }) => (
       whileInView={{ opacity: 0.5 }}
       transition={{
         repeat: 0,
-        duration: 0.5,
+        duration: ANIMATION_DURATION,
         delay: 0,
       }}
     >
@@ -43,7 +46,7 @@ const Section = ({ slice }) => (
           whileInView={{ opacity: 1, x: 0 }}
           transition={{
             repeat: 0,
-            duration: 0.5,
+            duration: ANIMATION_DURATION,
             delay: 0,
           }}
         >
@@ -59,8 +62,8 @@ const Section = ({ slice }) => (
           whileInView={{ opacity: 1, x: 0 }}
           transition={{
             repeat: 0,
-            duration: 0.5,
-            delay: 0,
+            duration: ANIMATION_DURATION,
+            delay: 0.25,
           }}
         >
           {slice.primary.title}
@@ -75,7 +78,7 @@ const Section = ({ slice }) => (
           whileInView={{ opacity: 1, x: 0 }}
           transition={{
             repeat: 0,
-            duration: 0.5,
+            duration: 0.25,
             delay: 0.5,
           }}
         >
@@ -88,8 +91,8 @@ const Section = ({ slice }) => (
             whileInView={{ opacity: 1, y: 0 }}
             transition={{
               repeat: 0,
-              duration: 0.5,
-              delay: 1,
+              duration: ANIMATION_DURATION,
+              delay: 0.75,
             }}
           >
             <Link
@@ -115,8 +118,8 @@ const Section = ({ slice }) => (
           whileInView={{ opacity: 1, x: 0 }}
           transition={{
             repeat: 0,
-            duration: 0.5,
-            delay: 0.5,
+            duration: ANIMATION_DURATION,
+            delay: 0.25,
           }}
         >
           <Image

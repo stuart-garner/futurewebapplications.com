@@ -74,13 +74,13 @@
   }
 
   .button::after {
-    @apply absolute left-0 top-0 z-[-1] h-full w-full origin-top-right scale-x-0 scale-y-100 rounded-xl bg-green-600 transition-all duration-300 content-[''];
-    transition: transform 500ms cubic-bezier(0.86, 0, 0.07, 1);
+    @apply absolute left-0 top-0 z-[-1] h-full w-full origin-top-right scale-y-100 rounded-xl bg-gray-900 opacity-0 transition-all duration-300 content-[''];
+    transition: opacity 500ms cubic-bezier(0.86, 0, 0.07, 1);
     transition-timing-function: cubic-bezier(0.86, 0, 0.07, 1);
   }
 
   .button:hover::after {
-    @apply origin-top-left scale-x-100 scale-y-100;
+    @apply origin-top-left scale-x-100 scale-y-100 opacity-50;
   }
 }
 
@@ -182,4 +182,39 @@ footer {
 
 .material-symbols-outlined {
   font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 48;
+}
+
+.menuButton {
+  cursor: pointer;
+  position: relative;
+  border: none;
+  background: none;
+  transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition-duration: 400ms;
+  transition-property: color;
+}
+
+.menuButton:focus,
+.menuButton:hover {
+  color: #000;
+}
+
+.menuButton:focus:after,
+.menuButton:hover:after {
+  width: 100%;
+  left: 0%;
+}
+
+.menuButton:after {
+  content: "";
+  pointer-events: none;
+  bottom: -2px;
+  left: 50%;
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  background-color: #000;
+  transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition-duration: 400ms;
+  transition-property: width, left;
 }

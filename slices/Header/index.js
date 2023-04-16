@@ -10,7 +10,7 @@ import { motion } from "framer-motion";
  * @typedef {import("@prismicio/react").SliceComponentProps<HeaderSlice>} HeaderProps
  * @param { HeaderProps }
  */
-
+const ANIMATION_DURATION = 0.25;
 const Header = ({ slice }) => (
   <section className="mt-[160px] py-20">
     <div className=" container relative flex flex-col gap-10 lg:flex-row lg:items-center lg:justify-between">
@@ -20,7 +20,7 @@ const Header = ({ slice }) => (
         whileInView={{ opacity: 1 }}
         transition={{
           repeat: 0,
-          duration: 0.5,
+          duration: ANIMATION_DURATION,
           delay: 0,
         }}
       >
@@ -33,7 +33,7 @@ const Header = ({ slice }) => (
           whileInView={{ opacity: 1, x: 0 }}
           transition={{
             repeat: 0,
-            duration: 0.5,
+            duration: ANIMATION_DURATION,
             delay: 0,
           }}
         >
@@ -45,8 +45,8 @@ const Header = ({ slice }) => (
           whileInView={{ opacity: 1, x: 0 }}
           transition={{
             repeat: 0,
-            duration: 0.5,
-            delay: 0.5,
+            duration: ANIMATION_DURATION,
+            delay: 0.25,
           }}
         >
           {slice.primary.sub_text}
@@ -57,8 +57,8 @@ const Header = ({ slice }) => (
           whileInView={{ opacity: 1, x: 0 }}
           transition={{
             repeat: 0,
-            duration: 0.5,
-            delay: 0.5,
+            duration: ANIMATION_DURATION,
+            delay: 0.25,
           }}
         >
           <PrismicRichText field={slice.primary.description} />
@@ -69,8 +69,8 @@ const Header = ({ slice }) => (
           whileInView={{ opacity: 1, y: 0 }}
           transition={{
             repeat: 0,
-            duration: 0.5,
-            delay: 1,
+            duration: ANIMATION_DURATION,
+            delay: 0.5,
           }}
         >
           <Link
@@ -91,8 +91,8 @@ const Header = ({ slice }) => (
           whileInView={{ opacity: 1 }}
           transition={{
             repeat: 0,
-            duration: 0.5,
-            delay: 0.5,
+            duration: ANIMATION_DURATION,
+            delay: 0.25,
           }}
         >
           <Image

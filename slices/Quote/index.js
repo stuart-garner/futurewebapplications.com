@@ -7,6 +7,8 @@ import { motion } from "framer-motion";
  * @typedef {import("@prismicio/react").SliceComponentProps<QuoteSlice>} QuoteProps
  * @param { QuoteProps }
  */
+
+const ANIMATION_DURATION = 0.25;
 const Quote = ({ slice }) => (
   <section className="py-28 lg:py-48">
     <div className="container flex flex-col justify-center lg:flex-row">
@@ -17,7 +19,7 @@ const Quote = ({ slice }) => (
           whileInView={{ opacity: 1, y: 0 }}
           transition={{
             repeat: 0,
-            duration: 0.5,
+            duration: ANIMATION_DURATION,
             delay: 0,
           }}
         >
@@ -30,8 +32,8 @@ const Quote = ({ slice }) => (
           whileInView={{ opacity: 1, y: 0 }}
           transition={{
             repeat: 0,
-            duration: 0.5,
-            delay: 0.5,
+            duration: ANIMATION_DURATION,
+            delay: 0.25,
           }}
         >
           <PrismicRichText field={slice.primary.description} />

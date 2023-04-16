@@ -54,16 +54,12 @@ const Header = () => {
           </Link>
         </div>
         <nav role="navigation" className="flex items-center gap-12">
-          <Link
-            className="button-secondary"
-            href="/"
-            aria-label="Link to home page"
-          >
+          <Link className="menuButton" href="/" aria-label="Link to home page">
             Home
           </Link>
 
           <Link
-            className="button-secondary"
+            className="menuButton"
             href="/about"
             aria-label="Link to About page"
           >
@@ -71,7 +67,7 @@ const Header = () => {
           </Link>
 
           <Link
-            className="button-secondary"
+            className="menuButton"
             href="/#footer"
             aria-label="Link to contact form"
           >

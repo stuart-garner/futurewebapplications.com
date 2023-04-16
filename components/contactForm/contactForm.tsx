@@ -25,7 +25,7 @@ function ContactForm() {
   }
   return (
     <div className=" rounded-b-3xl bg-[#4A89BB] px-10 py-20 text-white lg:rounded-3xl lg:p-20">
-      <h2 className="text-4xl font-bold capitalize text-white">
+      <h2 className="mb-5 text-4xl font-bold capitalize text-white">
         Come and talk to us
       </h2>
       <p className="m-auto mb-20 max-w-[400px]">
