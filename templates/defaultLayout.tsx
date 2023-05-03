@@ -12,7 +12,7 @@ const DefaultLayout = (props: Props) => {
   return (
     <>
       <Header />
-      <main>{children}</main>
+      <main className="pt-[160px]">{children}</main>
       <Footer />
     </>
   );

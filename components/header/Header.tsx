@@ -65,8 +65,14 @@ const Header = () => {
               <img src="/logo.png" alt="Logo" className="h-[100%] w-auto" />
             </Link>
           </div>
-          <nav role="navigation" className="hidden items-center gap-12 lg:flex">
+          <nav
+            role="navigation"
+            className={`fixed top-0 flex h-screen w-[300px] flex-col justify-start gap-12 bg-white px-16 py-32 drop-shadow-lg lg:absolute lg:flex-row ${
+              menuOpen ? "right-0" : "right-[-300px]"
+            } transition-right transform-gpu duration-500 lg:right-0 lg:h-full lg:items-center lg:px-0 lg:py-0 lg:drop-shadow-none`}
+          >
             <Link
+              onClick={() => setMenuOpen(false)}
               className="menuButton"
               href="/"
               aria-label="Link to home page"
@@ -75,6 +81,7 @@ const Header = () => {
             </Link>
 
             <Link
+              onClick={() => setMenuOpen(false)}
               className="menuButton"
               href="/about"
               aria-label="Link to About page"
@@ -83,6 +90,7 @@ const Header = () => {
             </Link>
 
             <Link
+              onClick={() => setMenuOpen(false)}
               className="menuButton"
               href="/#footer"
               aria-label="Link to contact form"
