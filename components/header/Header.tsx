@@ -59,7 +59,7 @@ const Header = () => {
             : "h-[150px] bg-transparent drop-shadow-none"
         }`}
       >
-        <div className="container flex h-auto justify-between">
+        <div className="container flex h-auto justify-between relative">
           <div className="h-auto  w-[300px]">
             <Link href="/" scroll={false} aria-label="Link to home page">
               <img src="/logo.png" alt="Logo" className="h-[100%] w-auto" />
