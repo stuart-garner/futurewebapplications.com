@@ -6,19 +6,15 @@ function ContactForm() {
   const [state, handleSubmit] = useForm("xnqyjbqn");
   if (state.succeeded) {
     return (
-      <div className="flex h-[430px] items-center justify-center gap-5 text-gray-50 xl:items-start xl:justify-start">
+      <div className=" rounded-b-3xl bg-[#4A89BB] px-10 py-20 text-white lg:rounded-3xl lg:p-20">
         <div className="flex flex-col items-center gap-5 md:flex-row">
-          <Image
-            src="/footer-profile-pic.webp"
-            width={400}
-            height={400}
-            alt="Stuart Garner Footer Profile Picture"
-            className="w-[200px]"
-          />
-          <div className="text-center md:text-left">
-            <h4>Thanks for reaching out!</h4>
-            <p>I will be in touch as soon as I can.</p>
-          </div>
+          <h2 className="mb-5 text-4xl font-bold capitalize text-white">
+            Thanks for reaching out!
+          </h2>
+          <p className="m-auto mb-20 max-w-[400px]">
+            I will be in touch as soon as I can.
+          </p>
+          <div className="flex h-full w-full flex-col gap-5 "> </div>
         </div>
       </div>
     );
@@ -26,7 +22,7 @@ function ContactForm() {
   return (
     <div className=" rounded-b-3xl bg-[#4A89BB] px-10 py-20 text-white lg:rounded-3xl lg:p-20">
       <h2 className="mb-5 text-4xl font-bold capitalize text-white">
-        Come and talk to us
+        Come and talk to us!
       </h2>
       <p className="m-auto mb-20 max-w-[400px]">
         We are here to answer your questions, so drop us a line with your

@@ -60,6 +60,7 @@ const Header = ({ slice }) => (
             duration: ANIMATION_DURATION,
             delay: 0.25,
           }}
+          className="header-description"
         >
           <PrismicRichText field={slice.primary.description} />
         </motion.div>
@@ -81,7 +82,6 @@ const Header = ({ slice }) => (
             <span className="align-middle capitalize">
               {slice.primary.cta_button_text}
             </span>
-            <span className="material-symbols-outlined">mail</span>
           </Link>
         </motion.div>
       </div>

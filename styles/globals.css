@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700;800;900&display=swap");
 @import "tailwindcss/base";
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
@@ -12,6 +12,10 @@
     @apply bg-white text-gray-500;
   }
 
+  body::after {
+    @apply fixed bottom-5 left-5 z-50 rounded-xl bg-gray-900 p-[20px] text-gray-50  content-['sm'] md:content-['md'] lg:content-['lg'] xl:content-['xl'] 2xl:content-['2xl'];
+  }
+
   header {
     @apply w-full;
   }
@@ -21,7 +25,7 @@
   }
 
   h1 {
-    @apply text-5xl font-bold uppercase text-gray-800;
+    @apply text-5xl font-bold uppercase text-gray-800 md:text-6xl xl:text-7xl 2xl:text-8xl;
   }
 
   h2 {
@@ -38,6 +42,10 @@
 
   p {
     @apply text-lg;
+  }
+
+  .header-description p {
+    @apply xl:text-xl 2xl:text-2xl;
   }
 
   img {
@@ -85,7 +93,7 @@
 }
 
 html {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Work Sans", sans-serif;
 }
 
 footer {

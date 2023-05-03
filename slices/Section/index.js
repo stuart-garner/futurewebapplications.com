@@ -16,23 +16,16 @@ const ANIMATION_DURATION = 0.25;
 
 const Section = ({ slice }) => (
   <section className="py-28 lg:px-28 lg:py-28">
-    <motion.span
-      className={`absolute top-0 ${
+    <span
+      className={`absolute top-0 opacity-50 ${
         slice.primary.image_left ? "right-0" : "left-0"
       }  z-[-1] block w-[50%]`}
-      initial={{ opacity: 0 }}
-      whileInView={{ opacity: 0.5 }}
-      transition={{
-        repeat: 0,
-        duration: ANIMATION_DURATION,
-        delay: 0,
-      }}
     >
       {slice.primary.image_left ? <RightBlob /> : <LeftBlob />}
-    </motion.span>
+    </span>
 
     <div
-      className={`container flex flex-col gap-20 lg:px-[200px] ${
+      className={`container flex flex-col gap-20 xl:px-[200px] ${
         slice.primary.image_left ? "lg:flex-row-reverse" : "lg:flex-row"
       }`}
     >
@@ -103,19 +96,15 @@ const Section = ({ slice }) => (
               <span className="align-middle capitalize">
                 {slice.primary.cta_button_text}
               </span>
-              <span className="material-symbols-outlined">local_library</span>
+        
             </Link>
           </motion.div>
         )}
       </div>
-      <div className="lg:basis-1/2">
+      <div className=" lg:basis-1/2">
         <motion.div
-          initial={
-            slice.primary.image_left
-              ? { opacity: 0, x: -50 }
-              : { opacity: 0, x: 50 }
-          }
-          whileInView={{ opacity: 1, x: 0 }}
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
           transition={{
             repeat: 0,
             duration: ANIMATION_DURATION,
